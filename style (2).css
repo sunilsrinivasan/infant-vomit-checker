@@ -1,0 +1,5 @@
+
+/* style.css */
+body { margin: 0; font-family: system-ui, sans-serif; }
+.btn { @apply bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg; }
+.bot { margin-bottom: 1rem; }
