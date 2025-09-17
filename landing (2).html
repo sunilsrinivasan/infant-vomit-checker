@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infant Vomiting Checker</title>
+  <link rel="stylesheet" href="landing.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navigation -->
+  <nav class="container mx-auto flex justify-between items-center py-6">
+    <h1 class="text-2xl font-bold">Infant Vomiting Checker</h1>
+    <div class="space-x-4">
+      <a href="#about" class="btn-secondary">About</a>
+      <a href="#how-it-works" class="btn-secondary">How it works</a>
+      <a href="#chat" class="btn-primary">Start the Chatbot</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="container mx-auto flex flex-col md:flex-row items-center py-16">
+    <div class="md:w-1/2 space-y-6">
+      <h2 class="text-4xl md:text-5xl font-extrabold">Worried about your child's vomiting?</h2>
+      <p class="text-lg text-gray-300">Get pediatric guidance in minutes. This quick triage chatbot helps parents decide when to use home care and when to seek medical attention.</p>
+      <div class="space-x-4">
+        <a href="#chat" class="btn-primary">Try the Vomiting Checker</a>
+        <a href="#about" class="btn-secondary">Learn more</a>
+      </div>
+    </div>
+    <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+      <img src="sick-child-line.png" alt="Sick child illustration" class="w-64 h-64" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-16">
+    <h3 class="text-3xl font-bold mb-4">About</h3>
+    <p class="text-gray-300">Built and validated by pediatric specialists with feedback from real parents, our Infant Vomiting Checker offers evidence-based recommendations tailored by age and symptoms. It guides you step-by-step to ensure safe decision-making.</p>
+  </section>
+
+  <!-- How it works -->
+  <section id="how-it-works" class="bg-gray-800 py-16">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-4">How it works</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>You answer simple questions about onset, frequency, and associated symptoms.</li>
+        <li>The chatbot provides clear next steps, including feeding tips, medication dosing, or urgent referral.</li>
+        <li>All guidance is based on current pediatric guidelines.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Chat Section -->
+  <section id="chat" class="container mx-auto py-16">
+    <h3 class="text-3xl font-bold mb-4">Chat with our Vomiting Bot</h3>
+    <div id="chat-container" class="bg-gray-800 p-6 rounded-lg"></div>
+  </section>
+
+  <script src="vomit-chatbot.js"></script>
+</body>
+</html>
