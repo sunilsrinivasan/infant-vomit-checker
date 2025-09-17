@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infant Vomiting Checker</title>
+  <link rel="manifest" href="manifest.json" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white flex flex-col min-h-screen">
+  <nav class="container mx-auto py-6">
+    <h1 class="text-2xl font-bold">Infant Vomiting Checker</h1>
+  </nav>
+  <section id="vomit" class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold mb-4">Chat with our Vomiting Bot</h2>
+    <div id="vomit-chat-container" class="bg-gray-800 p-6 rounded-lg"></div>
+  </section>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+  <script src="vomiting-chatbot.js"></script>
+</body>
+</html>
