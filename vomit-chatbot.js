@@ -17,7 +17,7 @@ const steps = {
     ]
   },
   sip_continue: {
-    text: "Continue giving sips of fluids (kanji, juice, buttermilk, water, soups) if >6 months, or breast/formula feeds if <6 months. Avoid bottles. If vomits again, restart.",
+    text: "Continue giving sips of fluids (kanji, juice, buttermilk, water, soups) if >6 months, or breast/formula feeds if <6 months. Avoid bottles. If vomits again.",
     options: [{ label: "Restart", next: 1 }]
   },
   4: { text: "Does your child show dehydration signs (dry tongue, reduced urine)?", options: [
@@ -50,7 +50,7 @@ const steps = {
     ]
   },
   dose_100_40: {
-    text: "Give P100 drops (100 mg/ml): 8 drops (40 mg) every 6h. Consult fever chart.",
+    text: "Give P100 drops (parecetamol-100 mg/ml): 8 drops (40 mg) every 6h. Consult fever chart.",
     options: [{ label: "Restart", next: 1 }]
   },
   9: { text: "Is your child only on breast feeds?", options: [
@@ -77,7 +77,7 @@ const steps = {
     ]
   },
   dose_100_50_eme: {
-    text: "Give P100 drops: 10 drops (50 mg) every 6h if fever. Also Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Consult fever chat.",
+    text: "Give  P100 drops (parecetamol-100 mg/ml): 10 drops (50 mg) every 6h if fever. Also Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Consult fever chat.",
     options: [{ label: "Restart", next: 1 }]
   },
   12: { text: "Do you use bottle feeds?", options: [
@@ -86,7 +86,7 @@ const steps = {
     ]
   },
   stop_bottle_eme: {
-    text: "Stop bottle; give milk via spoon/paladai. Give Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Restart.",
+    text: "Stop bottle; give milk via spoon/paladai. Give Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit.",
     options: [{ label: "Restart", next: 1 }]
   },
   13: { text: "Loose motions or cough present?", options: [
@@ -95,11 +95,11 @@ const steps = {
     ]
   },
   ref_loose_cough: {
-    text: "Consult loose motions or cough chatbot. Give Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins. Restart.",
+    text: "Consult loose motions or cough chatbot. Give Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   eme_only: {
-    text: " Give Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins. Restart.",
+    text: " Give Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   14: { text: "Does your child have fever?", options: [
@@ -108,7 +108,7 @@ const steps = {
     ]
   },
   dose_125_5_eme5: {
-    text: "Give P125 syrup (125 mg/5 ml): 5 ml every 6h. Also Emeset 5 ml BID. Observe 24h, fluids q15m. Restart.",
+    text: "Give P125 syrup (paracetamol-125 mg/5 ml): 5 ml every 6h. Also Emeset (ondansetron 2mg/5ml) 5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   15: { text: "Loose motions or cough?", options: [
@@ -117,11 +117,11 @@ const steps = {
     ]
   },
   ref_loose_cough_eme5: {
-    text: "Consult loose/cough chatbot. Give Emeset 5 ml BID. Observe 24h, fluids q15m. Restart.",
+    text: "Consult loose/cough chatbot. Give Emeset (ondansetron 2mg/5ml) 5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   eme_only_5: {
-    text: "Give Emeset 5 ml BID. Observe 24h, fluids q15m. Restart.",
+    text: "Give Emeset (ondansetron 2mg/5ml) 5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   16: { text: "Does your child have fever?", options: [
@@ -130,7 +130,7 @@ const steps = {
     ]
   },
   dose_125_75_eme75: {
-    text: "Give P125 syrup: 7.5 ml every 6h. Emeset 7.5 ml BID. Observe 24h, fluids q15m. Restart.",
+    text: "Give  P125 syrup (paracetamol-125 mg/5 ml): 7.5 ml every 6 hrs Also Emeset (ondansetron 2mg/5ml) 7.5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   17: { text: "Loose motions or cough?", options: [
@@ -139,11 +139,11 @@ const steps = {
     ]
   },
   ref_loose_cough_eme75: {
-    text: "Consult loose/cough chatbot. Give Emeset 7.5 ml BID. Observe 24h, fluids q15m. Restart.",
+    text: "Consult loose motions /cough chatbot.Also Emeset (ondansetron 2mg/5ml) 7.5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   eme_only_75: {
-    text: "Give Emeset 7.5 ml BID. Observe 24h, fluids q15m. Restart.",
+    text: "Give Emeset (ondansetron 2mg/5ml) 7.5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   18: { text: "Does your child have fever?", options: [
@@ -152,7 +152,7 @@ const steps = {
     ]
   },
   dose_250_5_vom4: {
-    text: "Give P250 syrup: 5 ml every 6h. Vomikind 4 mg tablet q12h. Observe 24h, fluids q15m. Restart.",
+    text: "Give  P 250 syrup (paracetamol-250 mg/5 ml: 5 ml every 6h. Also Vomikind (ondansetron) 4 mg tablet every 12 hours . Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   19: { text: "Loose motions or cough?", options: [
@@ -161,11 +161,11 @@ const steps = {
     ]
   },
   ref_loose_cough_vom4: {
-    text: "Consult loose/cough chatbot. Give Vomikind 4 mg q12h. Observe 24h, fluids q15m. Restart.",
+    text: "Consult loose motions /cough chatbot. Give Vomikind (ondansetron 4 mg) tablet every 12 hours . Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   vom4_only: {
-    text: "Give Vomikind 4 mg q12h. Observe 24h, fluids q15m. Restart.",
+    text: "Give Vomikind 4 mg (ondansetron) tablet every 12 hours . Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   20: { text: "Does your child have fever?", options: [
@@ -174,7 +174,7 @@ const steps = {
     ]
   },
   dose_500_vom42: {
-    text: "Give P500 tablet q6h and Vomikind 4 mg x2 q12h. Observe 24h, fluids q15m. Restart.",
+    text: "Give P500 ( paracetamol 500mg) tablet every 6 hrs if fever and Vomikind (ondansetron 4 mg)-   2 tablets every 12 hours . Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   21: { text: "Loose motions or cough?", options: [
@@ -183,11 +183,11 @@ const steps = {
     ]
   },
   ref_loose_cough_vom42: {
-    text: "Consult loose/cough chatbot. Give Vomikind x2 q12h. Observe 24h, fluids q15m. Restart.",
+    text: "Consult loose motions /cough chatbot. Give Vomikind (ondansetron 4 mg)-   2 tablets every 12 hours . Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   vom42_only: {
-    text: "Give Vomikind x2 q12h. Observe 24h, fluids q15m. Restart.",
+    text: "Give Vomikind (Ondansetron 4 mg)-   2 tablets every 12 hours . Observe 24h, fluids every 15 mins.",
     options: [{ label: "Restart", next: 1 }]
   },
   doctor: { text: "Consult doctor immediately.", options: [{ label: "Restart", next: 1 }] }
