@@ -77,7 +77,7 @@ const steps = {
     ]
   },
   dose_100_50_eme: {
-    text: "Give P100 drops: 10 drops (50 mg) every 6h if fever. Also Emeset 2.5 ml BID. Consult fever chat.",
+    text: "Give P100 drops: 10 drops (50 mg) every 6h if fever. Also Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Consult fever chat.",
     options: [{ label: "Restart", next: 1 }]
   },
   12: { text: "Do you use bottle feeds?", options: [
@@ -86,7 +86,7 @@ const steps = {
     ]
   },
   stop_bottle_eme: {
-    text: "Stop bottle; give milk via spoon/paladai. Give Emeset 2.5 ml BID. Restart.",
+    text: "Stop bottle; give milk via spoon/paladai. Give Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Restart.",
     options: [{ label: "Restart", next: 1 }]
   },
   13: { text: "Loose motions or cough present?", options: [
@@ -95,11 +95,11 @@ const steps = {
     ]
   },
   ref_loose_cough: {
-    text: "Consult loose motions or cough chatbot. Give Emeset 2.5 ml BID. Observe 24h, fluids q15m. Restart.",
+    text: "Consult loose motions or cough chatbot. Give Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins. Restart.",
     options: [{ label: "Restart", next: 1 }]
   },
   eme_only: {
-    text: "Give Emeset 2.5 ml BID. Observe 24h, fluids q15m. Restart.",
+    text: " Give Emeset (ondansetron 2mg/5ml) 2.5 ml every 12 hours if vomit. Observe 24h, fluids every 15 mins. Restart.",
     options: [{ label: "Restart", next: 1 }]
   },
   14: { text: "Does your child have fever?", options: [
